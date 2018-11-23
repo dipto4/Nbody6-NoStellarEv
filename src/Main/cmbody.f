@@ -423,7 +423,7 @@ c$$$*
       BODY(I2) = 0.0D0
 
       RADIUS(I1) = ((ZM * ZMBAR) ** (0.8D0))/SU
-*      WRITE (13,*) TTOT, I1, I2, ZM1, ZM2, (ZM*ZMBAR), (RADIUS(I1)*SU)
+      WRITE (13,*) TTOT, I1, I2, ZM1, ZM2, (ZM*ZMBAR), (RADIUS(I1)*SU)
       SPIN(I1) = (SPIN(I1) + SPIN(I2))*(1.0 - DM/ZM)
       T0(I2) = TADJ + DTADJ 
       IF (KZ(23).EQ.0.OR.RTIDE.GT.1000.0*RSCALE) T0(I2) = 1.0D+10

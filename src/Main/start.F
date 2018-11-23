@@ -139,10 +139,10 @@
 *       collisions.
       IF (KZ(19).GE.0) THEN
           CALL INSTAR
-*          WRITE (13,69)
-* 69   FORMAT('                  TIME[NB]    NAME(I1)    NAME(I2)',
-*     &      '                 M(I1)[M*]                 M(I2)[M*]',
-*     &      '               M(INEW)[M*]                    RS[R*]'/)
+          WRITE (13,69)
+ 69   FORMAT('                  TIME[NB]    NAME(I1)    NAME(I2)',
+     &      '                 M(I1)[M*]                 M(I2)[M*]',
+     &      '               M(INEW)[M*]                    RS[R*]'/)
 
       ELSE IF (KZ(14).GT.1) THEN
           DT = 1.0E-03/TSCALE
