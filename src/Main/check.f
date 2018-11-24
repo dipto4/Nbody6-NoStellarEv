@@ -67,9 +67,9 @@ C      END IF
 *       Control variable NDUMP used to prevent a third restart.
       ETACOR = 0.5
 
-      IF (NDUMP .GE. 4) THEN
+      IF (NDUMP .GT. 2) THEN
           ETACOR = 0.5/REAL(NDUMP)
-          IF (NDUMP .GE. 6) THEN
+          IF (NDUMP .GE. 3) THEN
               IF(DE .GE. 1.0E-1) THEN
                   WRITE(6,*) "CALCULATIONS HALTED *******"
               ELSE

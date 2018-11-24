@@ -323,7 +323,7 @@ c$$$     &        EBIN,EMERGE
 *     Perform automatic error control (RETURN on restart with KZ(2) > 1).
       CALL CHECK(DE)
       IF (ABS(DE).GT.5.0*QE) THEN
-          IF (NDUMP .GE. 6) THEN
+          IF (NDUMP .GE. 3) THEN
               IF (ABS(DE) .GE. 1.0E-1) THEN 
                 WRITE (6, *) "CALCULATIONS HALTED * * * DE > 10%"
                 STOP
